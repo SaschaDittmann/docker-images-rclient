@@ -14,7 +14,8 @@ LABEL maintainer="info@bytesmith.de" \
 
 ENV LC_ALL=en_US.UTF-8 \
 	LANG=en_US.UTF-8 \
-	LANGUAGE=en_US.UTF-8
+	LANGUAGE=en_US.UTF-8 \
+	MKL_CBWR="AUTO"
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
