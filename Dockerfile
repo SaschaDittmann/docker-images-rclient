@@ -1,9 +1,21 @@
 FROM ubuntu:16.04
-MAINTAINER info@bytesmith.de
+ARG VCS_REF
+ARG BUILD_DATE
+ARG RCLIENT_VERSION=3.5.2
+LABEL maintainer="info@bytesmith.de" \
+	  org.label-schema.build-date=$BUILD_DATE \
+	  org.label-schema.name="Microsoft R Client on Linux for Docker" \
+	  org.label-schema.description="Microsoft R Client is a free, community-supported, data science tool for high performance analytics. R Client is built on top of Microsoft R Open so you can use any open source R package. It also introduces the powerful ScaleR technology to benefit from parallelization and remote computing." \
+	  org.label-schema.url="https://docs.microsoft.com/en-us/machine-learning-server/r-client/what-is-microsoft-r-client" \
+	  org.label-schema.vcs-ref=$VCS_REF \
+	  org.label-schema.vcs-url="https://github.com/SaschaDittmann/docker-images-rclient" \
+	  org.label-schema.version=$RCLIENT_VERSION \
+	  org.label-schema.schema-version="1.0"
 
 ENV LC_ALL=en_US.UTF-8 \
 	LANG=en_US.UTF-8 \
-	LANGUAGE=en_US.UTF-8
+	LANGUAGE=en_US.UTF-8 \
+	MKL_CBWR="AUTO"
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
@@ -50,7 +62,7 @@ RUN apt-get update \
 		&& dpkg -i packages-microsoft-prod.deb \
 	&& apt-get update \
 	&& apt-get install -y --no-install-recommends \
-		microsoft-r-client-packages-3.4.3 \
+		microsoft-r-client-packages-$RCLIENT_VERSION \
 	&& rm -rf /tmp/* \
 		&& apt-get autoremove -y \
 		&& apt-get autoclean -y \
