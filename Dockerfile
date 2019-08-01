@@ -55,4 +55,4 @@ RUN apt-get update \
 		&& apt-get autoremove -y \
 		&& apt-get autoclean -y \
 		&& rm -rf /var/lib/apt/lists/*
-CMD ["Revo64"]
+CMD ["Revo64", "--save"]
