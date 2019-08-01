@@ -50,7 +50,7 @@ RUN apt-get update \
 		&& dpkg -i packages-microsoft-prod.deb \
 	&& apt-get update \
 	&& apt-get install -y --no-install-recommends \
-		microsoft-r-client-packages-3.4.3 \
+		microsoft-r-client-packages-3.5.2 \
 	&& rm -rf /tmp/* \
 		&& apt-get autoremove -y \
 		&& apt-get autoclean -y \
