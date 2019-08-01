@@ -1,7 +1,7 @@
+FROM ubuntu:16.04
 ARG VCS_REF
 ARG BUILD_DATE
 ARG RCLIENT_VERSION=3.5.2
-FROM ubuntu:16.04
 LABEL maintainer="info@bytesmith.de" \
 	  org.label-schema.build-date=$BUILD_DATE \
 	  org.label-schema.name="Microsoft R Client on Linux for Docker" \
