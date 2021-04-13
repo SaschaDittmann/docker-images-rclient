@@ -3,7 +3,7 @@
 [![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/SaschaDittmann/docker-images-rclient)
 [![](https://img.shields.io/github/tag/SaschaDittmann/docker-images-rclient.svg)](https://github.com/SaschaDittmann/docker-images-rclient)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![](https://ga4gh.azurewebsites.net/api?repo=docker-images-rclient)](https://github.com/SaschaDittmann/gaforgithub)
+[![](https://ga4gh.datainsights.cloud/api?repo=docker-images-rclient)](https://github.com/SaschaDittmann/gaforgithub)
 
 ## Docker Images
 
