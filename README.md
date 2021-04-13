@@ -11,6 +11,7 @@ This Docker Image is for development & testing purposes ONLY.
 
 [![](https://img.shields.io/docker/pulls/bytesmith/rclient.svg)](https://hub.docker.com/r/bytesmith/rclient)
 [![](https://img.shields.io/docker/automated/bytesmith/rclient.svg)](https://hub.docker.com/r/bytesmith/rclient/builds)
+[![](https://img.shields.io/docker/cloud/build/bytesmith/rclient.svg)](https://hub.docker.com/r/bytesmith/rclient/builds)
 
 version          | description                               | size 
 ---------------- | ----------------------------------------- | ------
